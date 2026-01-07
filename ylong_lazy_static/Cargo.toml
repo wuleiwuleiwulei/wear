@@ -1,0 +1,15 @@
+[package]
+name = "ylong_lazy_static"
+version = "1.25.10"
+edition = "2021"
+authors = ["z00850021 <zhouzipeng@huawei.com>"]
+description = "A macro for declaring lazily evaluated statics in Rust."
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Flib%2Futil%2Fylong_lazy_static"
+keywords = ["ylong", "lazy", "static"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lazy_static = "1.4.0"

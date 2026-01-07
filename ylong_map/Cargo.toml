@@ -1,0 +1,18 @@
+[package]
+name = "ylong_map"
+version = "1.25.10"
+authors = ["w00620137 <wangjiangtong@huawei.com>"]
+edition = "2021"
+description = "Fixed capacity hashmap with user-defined allocator, and methods that return recoverable error when OOM"
+readme = "README.md"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master"
+keywords = ["ylong", "hashmap", "customized-allocator", "fixed-cap"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ylong_stdx_common = { path = "../ylong_stdx_common", version = "1.25.10" }
+
+[dev-dependencies]
+rand = { version = "0.8.5", default-features = false, features = ["alloc"] }
+rand_xorshift = "0.3.0"

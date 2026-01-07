@@ -1,0 +1,15 @@
+[package]
+name = "ylong_atomic_refcell"
+version = "1.25.10"
+edition = "2018"
+authors = ["h00586870 <hukai45@huawei.com>"]
+description = "Threadsafe RefCell"
+license = "MIT OR Apache-2.0"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Flib%2Futil%2Fylong_atomic_refcell"
+keywords = ["ylong", "atomic", "refcell"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[features]
+std = []
