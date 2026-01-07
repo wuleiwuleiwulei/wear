@@ -1,0 +1,16 @@
+[package]
+name = "ylong_one_error"
+version = "1.25.10"
+edition = "2021"
+authors = ["w00507256 <wushilong3@huawei.com>"]
+description = "one crate only one error"
+readme = "readme.md"
+license = "MIT OR Apache-2.0"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Flib%2Futil%2Fylong_one_error"
+keywords = ["ylong", "error"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+prefix-error = []
+full-file-path = []

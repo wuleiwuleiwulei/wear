@@ -1,0 +1,45 @@
+[package]
+name = "ylong_sysinfo"
+version = "1.25.10"
+edition = "2021"
+description = "system info like cpu/disk/process etc"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Flib%2Futil%2Fylong_sysinfo"
+keywords = ["ylong", "sysinfo"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2.134"
+
+[dependencies]
+log = {version = "=0.4.22", default-features = false, optional = true}
+
+[dev-dependencies]
+sysinfo = "0.28.1"
+local-ip-address = "0.4.9"
+ylong_mock = { path = "../../../../tools/ylong_mock" }
+
+[[example]]
+name = "cpu_example"
+path = "examples/cpu_example.rs"
+
+[[example]]
+name = "disk_example"
+path = "examples/disk_example.rs"
+
+[[example]]
+name = "network_example"
+path = "examples/network_example.rs"
+
+[[example]]
+name = "memory_example"
+path = "examples/memory_example.rs"
+
+[[example]]
+name = "process_example"
+path = "examples/process_example.rs"
+
+[features]
+log = ["dep:log"]

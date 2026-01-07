@@ -1,0 +1,13 @@
+[package]
+name = "ylong_stdx_common"
+version = "1.25.10"
+authors = ["l00586455 <louzhihao@huawei.com>", "w00620137 <wangjiangtong@huawei.com>"]
+edition = "2021"
+description = "Common parts of Ylong std enhancement crates"
+readme = "README.md"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Fstdx%2Fylong_stdx_common"
+keywords = ["ylong", "std", "enhancement"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

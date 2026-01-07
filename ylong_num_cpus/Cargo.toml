@@ -1,0 +1,18 @@
+[package]
+name = "ylong_num_cpus"
+version = "1.25.10"
+authors = ["z00355984 <zhouzipeng@huawei.com>"]
+edition = "2021"
+readme = "README.md"
+description = "obtains the value of the current valid cpu"
+license = "MIT OR Apache-2.0"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Flib%2Futil%2Fylong_num_cpus"
+keywords = ["ylong", "cpu", "cpus", "cores"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2.153"

@@ -1,0 +1,17 @@
+[package]
+name = "ylong_rc"
+version = "1.25.10"
+authors = ["w00620137 <wangjiangtong@huawei.com>"]
+edition = "2021"
+description = "Rc with user-defined allocator, and methods that return recoverable error when OOM"
+readme = "README.md"
+repository = "https://open.codehub.huawei.com/innersource/Ylong_Rust/ylong_rs/files?ref=master&filePath=src%2Fstdx%2Fylong_rc"
+keywords = ["ylong", "rc", "customized-allocator"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ylong_stdx_common = { path = "../ylong_stdx_common", version = "1.25.10" }
+ylong_box = { path = "../ylong_box", version = "1.25.10" }
+
+[dev-dependencies]
